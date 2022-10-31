@@ -25,3 +25,8 @@
                                         (assoc :point id-ponto)
                                         (dissoc :user)))
     (throw (ex-info "point-full" {}))))
+
+
+;;fazer uma logica se vai devolver :ponto ou :user
+;;criar eventos na bike,
+;;um evento status , usar enum

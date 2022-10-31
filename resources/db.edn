@@ -10,10 +10,16 @@
                            :number       "12a"
                            :zip-code     "72000000"
                            :address-line ""}}}
- :bikes  {:1      {:point 1}
-          :50     {:point 1}
-          :999    {:point 100}
-          :101010 {:user  2}}
+ :bikes  {:1      {:data-aquisicao  "20/12/2019" }
+          :50     {:data-aquisicao  "28/12/2020" }
+          :999    {:data-aquisicao  "20/12/2019" }
+          :101010 {:data-aquisicao  "20/12/2019" } }
+ :bike-historico {{:id-bike :1 :data-hora-status "20/12/2019" :status :desativada  :ativo true  }
+                   {:id-bike :50 :data-hora-status "20/12/2019" :status :conserto  :ativo true  }
+                   {:id-bike :999 :data-hora-status "20/12/2019" :status :no-ponto :point :100 :ativo false }
+                   {:id-bike :101010 :data-hora-status "20/12/2019" :status :no-ponto :point :100  :ativo false  }
+                   {:id-bike :999 :data-hora-status "20/12/2019" :status :no-ponto :point :100 :ativo true  }
+                   {:id-bike :101010 :data-hora-status "20/12/2019" :status :alugada :user :1 true  }}
  :users  {:1  {:login "admin"
                :key   "/&[3-.wff@qx'{aTX-2P>}XE_B6Jc+"}
           :2  {:login "user"
